@@ -48,14 +48,17 @@ section.hero div {
 }
 
 section.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
     flex: 2 1 0;
-    padding: 8px 0px;
     background-color: #f5f1f1;
 }
 
 .form-row {
     display: flex;
-    gap: 48px;
+    gap: 65px;
 }
 
 button {
@@ -81,22 +84,23 @@ a {
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-size: .85rem;
+    gap: 16px;
     box-shadow: 1px;
     background-color: white;
     box-shadow: 0px 5px 5px lightgray;
-    padding: 8px;
+    padding: 16px;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 form label {
     font-size: .85rem;
+    color: rgb(125, 125, 125);
 }
 
 .create-account,
 .intro {
-    margin: 32px;
+    margin: 0px 150px 0px 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -111,4 +115,24 @@ form label {
 .create-account {
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+    padding: 0px 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--theme-color);
+    box-shadow: 1px 1px 5px var(--theme-color);
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
 }
