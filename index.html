@@ -18,7 +18,56 @@
 </head>
 
 <body>
-
+    <section class="hero">
+        <div>
+            <img src="images/soha.svg" />
+            <h1>South Hadley</h1>
+        </div>
+        <p class="credit">Photo by Brett Widmeier</p>
+    </section>
+    <section class="form">
+        <div class="intro">
+            <p>This is the town you've always been looking for! We've got hiking trails, beautiful scenery, amazingly
+                fast
+                internet service provided through the town, and the cheapest and greenest electricity you are likely to
+                find. Sign up now to live here!</p>
+            <p>DO IT <em>NOW</em>!</p>
+        </div>
+        <form id="form" action="#">
+            <p>Begin your new life today!</p>
+            <div class="form-row">
+                <label for="first">
+                    <p>FIRST NAME</p><input type="text" name="first" id="first">
+                </label>
+                <label for="last">
+                    <p>LAST NAME</p><input type="text" name="last" id="last">
+                </label>
+            </div>
+            <div class="form-row">
+                <label for="email">
+                    <p>EMAIL</p><input type="email" name="email" id="email">
+                </label>
+                <label for="phone">
+                    <p>PHONE NUMBER</p><input type="tel" name="phone" id="phone">
+                </label>
+            </div>
+            <div class="form-row">
+                <label for="password">
+                    <p>PASSWORD</p><input type="password" name="password" id="password">
+                </label>
+                <label for="confirm">
+                    <p>CONFIRM PASSWORD</p><input type="password" name="confirm" id="confirm">
+                </label>
+            </div>
+        </form>
+        <div class="create-account">
+            <button type="submit" form="form">CREATE ACCOUNT</button>
+            <div class="login">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

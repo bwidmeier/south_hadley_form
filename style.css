@@ -1,1 +1,114 @@
-/* font-family: 'Oxygen', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    --theme-color: goldenrod;
+}
+
+section.hero {
+    flex: 1 1 0;
+    background-image: url(images/soha.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.hero h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+section.hero img {
+    height: 80%;
+    filter: invert(100%) sepia(85%) saturate(0%) hue-rotate(336deg) brightness(111%) contrast(100%);
+}
+
+section.hero div {
+    align-self: stretch;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 0px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.credit {
+    color: white;
+    margin-bottom: 8px;
+    font-size: .7rem;
+}
+
+section.form {
+    flex: 2 1 0;
+    padding: 8px 0px;
+    background-color: #f5f1f1;
+}
+
+.form-row {
+    display: flex;
+    gap: 48px;
+}
+
+button {
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    border: none;
+    padding: 12px 32px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.login {
+    display: flex;
+    gap: 4px;
+}
+
+a {
+    color: var(--theme-color);
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: .85rem;
+    box-shadow: 1px;
+    background-color: white;
+    box-shadow: 0px 5px 5px lightgray;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+form label {
+    font-size: .85rem;
+}
+
+.create-account,
+.intro {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.intro {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.create-account {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
